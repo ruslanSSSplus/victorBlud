@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+.corpMain{
+    text-align: center;
+}
+.name{
+    color: white;
+    font-size:calc(35px + 1.5vw);
+    font-weight: bold;
+    margin-top: 40vh;
+    padding-bottom: 50px;
+}
+.vacancy{
+    margin: 15px;
+    border: solid 3px yellow;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    width: calc(130px + 5vw);
+    height: 55px;
+}
+.busines{
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    background-color: white;
+    color: black;
+    width: calc(130px + 5vw);
+    height: 55px;
+}
