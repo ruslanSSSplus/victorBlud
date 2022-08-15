@@ -1,4 +1,3 @@
-import {UsersAPI} from "../../API/usersAPI";
 
 
 const GET_USERS = 'USERS/GET_USERS';
@@ -40,9 +39,7 @@ const usersReducer = (state = initialState, action) => {
 
 export const getUsersThunkCreater = () => {
     return async (dispatch) => {
-        const response = await UsersAPI.getUsers()
-        response.map(el=> (el.picked = false))
-        dispatch(actions.putUsers(response))
+
     }
 }
 

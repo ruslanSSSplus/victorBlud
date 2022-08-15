@@ -1,39 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 
-.corpMain{
+.mainPersonal{
     text-align: center;
 }
-.name{
-    color: white;
-    font-size:calc(35px + 1.5vw);
-    font-weight: bold;
-    margin-top: 40vh;
-    padding-bottom: 50px;
+.victor{
+    margin-top: 55px;
+    width: 70px;
 }
-.vacancy{
-    margin: 15px;
-    border: solid 3px yellow;
-    border-radius: 50px;
+.text{
     font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    padding-left: 15px;
+    text-align: left;
+    width: calc(200px + 25vw);
+    border-left: 3px solid white;
+    color: white;
+    margin-top: 15vh;
+}
+.txt{
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: white;
+}
+.all{
+    margin-top: 20vh;
+}
+.inp{
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+    text-align: center;
+    outline: none;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 17px;
+    height: 50px;
+    border-bottom: 1px solid white;
+    width: calc(300px + 10vw);
+}
+.btn {
+    margin: 15px;
+    border: solid 3px white;
+    border-radius: 50px;
+    font-size: 15px;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
     padding-bottom: 5px;
     background-color: black;
     color: white;
     letter-spacing: 1px;
-    width: calc(130px + 5vw);
+    width: calc(350px - 100vw / 20);
     height: 55px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
-.busines{
-    font-weight: bold;
-    border-radius: 50px;
-    font-size: 20px;
-    font-family: 'Playfair Display', serif;
+.btn:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 200px;
+    margin-left: 50px;
+    background: #fff;
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.5) 0%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0.5) 100%
+    );
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    transform: rotate(45deg);
+    position: absolute;
+    animation: movingFlare 3s ease-in-out 0.05s infinite;
+}
+
+@keyframes movingFlare {
+    0% {
+        left: -30px;
+        margin-left: 0px;
+    }
+    30% {
+        left: 110%;
+        margin-left: 80px;
+    }
+    100% {
+        left: 110%;
+        margin-left: 80px;
+    }
+}
+.vi{
+    margin-top: 50px;
+    padding-bottom: 30px;
+    font-size: 17px;
+    color: gray;
     letter-spacing: 1px;
-    padding-bottom: 5px;
-    background-color: white;
-    color: black;
-    width: calc(130px + 5vw);
-    height: 55px;
 }

@@ -1,10 +1,21 @@
 import React from "react";
+import classes from './Corp.module.css'
 
-export const SmthElse = (props) => {
 
-    return (<h1>
-           Что-то еще
-        </h1>
+export const Corp = (props) => {
+
+    return (<div className={classes.corpMain}>
+
+            <div className={classes.name}>
+                BLUD Corp.
+            </div>
+            <button className={classes.vacancy}>
+                Вакансии
+            </button>
+            <button className={classes.busines}>
+                Бизнесу
+            </button>
+        </div>
 
     );
 }

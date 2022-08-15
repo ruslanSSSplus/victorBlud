@@ -9,15 +9,15 @@
     width: 70px;
 }
 .text{
-    font-size: 20px;
-    font-weight: bold;
-    margin: auto;
-    padding-left: 15px;
-    text-align: left;
-    width: calc(200px + 25vw);
-    border-left: 3px solid white;
+    margin-top: 90px;
     color: white;
-    margin-top: 15vh;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.tg{
+    margin-top: 20px;
+    width: 70px;
 }
 .txt{
     letter-spacing: 1px;
@@ -26,16 +26,23 @@
     font-size: 20px;
     color: white;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 .all{
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 .inp{
+
     letter-spacing: 1px;
     font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
     text-align: center;
     outline: none;
-    background-color: black;
+    background-color: transparent;
     color: white;
     border: none;
     font-size: 17px;
@@ -43,6 +50,7 @@
     border-bottom: 1px solid white;
     width: calc(300px + 10vw);
 }
+
 .btn {
     margin: 15px;
     border: solid 3px white;

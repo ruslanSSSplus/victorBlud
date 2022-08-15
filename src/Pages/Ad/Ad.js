@@ -1,22 +1,24 @@
 import React from "react";
-import classes from './Personal.module.css'
+import classes from './Ad.module.css'
 import blud from '../../assets/vb.png'
 import {Field, Form, Formik} from "formik";
+import tg from "../../assets/tg.png";
 
 
-export const Personal = (props) => {
+export const Ad = (props) => {
 
 
 
     const initialValues = {
-        name: '',
         email: '',
-        number: ''
+        name: '',
+        number: '',
+        request: '',
+        link: ''
     }
 
     const onSubmit =  (values) => {
-        console.log(values)
-
+       window.alert(values.email )
     }
 
 
@@ -25,37 +27,48 @@ export const Personal = (props) => {
 
             <img  src={blud} alt={"blud"} className={classes.victor}/>
             <div className={classes.text}>
-
-                    Стоимость онлайн ведения от 15 тыс./мес.,
-                программа тренировок 5 тыс./мес.. Если вам интересна более подробная информация,
-                пожалуйста отправьте заявку через форму ниже.
+                blud.manager@gmail.com
 
             </div>
-
+        <img src={tg} alt={'tg'} className={classes.tg}/>
             <Formik initialValues={initialValues} onSubmit={onSubmit} >
                 <Form >
 
                     <div className={classes.all}>
                         <div className={classes.txt}>
-                            ИМЯ
-                        </div>
-                        <div>
-                            <Field  type='text' name='name'
-                                    component='input' className={classes.inp}/>
-                        </div>
-                        <div className={classes.txt}>
                             E-mail
                         </div>
                         <div>
                             <Field type='text' name='email'
-                                    component='input' className={classes.inp}/>
+                                   component='input' className={classes.inp} autocomplete="off"/>
                         </div>
                         <div className={classes.txt}>
-                            ТЕЛЕФОН
+                            Ваше имя
                         </div>
                         <div>
-                            <Field  type='text' name='number'
-                                    component='input' className={classes.inp}/>
+                            <Field  type='text' name='name'
+                                    component='input' className={classes.inp} autocomplete="off"/>
+                        </div>
+                        <div className={classes.txt}>
+                            Телефон
+                        </div>
+                        <div>
+                            <Field  type='number' name='number'
+                                    component='input' className={classes.inp} autocomplete="off"/>
+                        </div>
+                        <div className={classes.txt}>
+                            Ваш вопрос / предложение
+                        </div>
+                        <div>
+                            <Field  type='text' name='request'
+                                    component='input' className={classes.inp} autocomplete="off"/>
+                        </div>
+                        <div className={classes.txt}>
+                            УДОБНЫЙ СПОСОБ СВЯЗИ
+                        </div>
+                        <div>
+                            <Field  type='text' name='link'
+                                    component='input' className={classes.inp} autocomplete="off"/>
                         </div>
                         <button type="submit" className={classes.btn}> ОТПРАВИТЬ </button>
                     </div>
