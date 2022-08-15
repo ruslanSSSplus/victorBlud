@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/victorBlud/static/css/main.0264670b.css",
-    "main.js": "/victorBlud/static/js/main.48c4552d.js",
+    "main.js": "/victorBlud/static/js/main.2969795b.js",
     "static/js/787.28cb0dcd.chunk.js": "/victorBlud/static/js/787.28cb0dcd.chunk.js",
     "static/media/vb.png": "/victorBlud/static/media/vb.c6d4dd4aacdad193fe3c.png",
     "index.html": "/victorBlud/index.html",
     "main.0264670b.css.map": "/victorBlud/static/css/main.0264670b.css.map",
-    "main.48c4552d.js.map": "/victorBlud/static/js/main.48c4552d.js.map",
+    "main.2969795b.js.map": "/victorBlud/static/js/main.2969795b.js.map",
     "787.28cb0dcd.chunk.js.map": "/victorBlud/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0264670b.css",
-    "static/js/main.48c4552d.js"
+    "static/js/main.2969795b.js"
   ]
 }
